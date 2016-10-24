@@ -1,4 +1,4 @@
-import java.util.*; 
+ï»¿import java.util.*; 
 import java.text.*; 
 
 public class ShowDate{
@@ -19,38 +19,38 @@ public class ShowDate{
 		
 		String time="";
 		if(hour<12){
-			time = "ÉÏÎç ";
+			time = "ä¸Šåˆ ";
 		}
 		else{
-			time = "ÏÂÎç ";
+			time = "ä¸‹åˆ ";
 		}
 		
 		String week="";
 		int day = cal.get(Calendar.DAY_OF_WEEK);
 		switch (day)
 		{
-			case 1:week = "ÐÇÆÚÒ»";
-			case 2:week = "ÐÇÆÚ¶þ";
-			case 3:week = "ÐÇÆÚÈý";
-			case 4:week = "ÐÇÆÚËÄ";
-			case 5:week = "ÐÇÆÚÎå";
-			case 6:week = "ÐÇÆÚÁù";
-			case 7:week = "ÐÇÆÚÈÕ";
+			case 1:week = "æ˜ŸæœŸä¸€";
+			case 2:week = "æ˜ŸæœŸäºŒ";
+			case 3:week = "æ˜ŸæœŸä¸‰";
+			case 4:week = "æ˜ŸæœŸå››";
+			case 5:week = "æ˜ŸæœŸäº”";
+			case 6:week = "æ˜ŸæœŸå…­";
+			case 7:week = "æ˜ŸæœŸæ—¥";
 		}
 		
 		String result = "";
 		//result = new String [8];
-		result += year+"Äê";
-		result += month+"ÔÂ";
-		result += date+"ÈÕ";
-		result += hour+"Ê±";
-		result += minute+"·Ö";
-		result += second+"Ãë";
+		result += year+"å¹´";
+		result += month+"æœˆ";
+		result += date+"æ—¥";
+		result += hour+"æ—¶";
+		result += minute+"åˆ†";
+		result += second+"ç§’";
 		result += " "+time;
 		result += " "+week;
 		System.out.println(result);
 		
-		//System.out.println(year+"Äê"+month+"ÔÂ"+date+"ÈÕ"+hour+"Ê±"+minute+"·Ö"+second+"Ãë "+time+week);
+		//System.out.println(year+"å¹´"+month+"æœˆ"+date+"æ—¥"+hour+"æ—¶"+minute+"åˆ†"+second+"ç§’ "+time+week);
 		return result;
     } 
 }
